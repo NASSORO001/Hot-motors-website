@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOT MOTORS COMPANY - SERVICES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+    <img src="hotmotors_logo_new.png" alt="Logo ya Hot Motors" class="logo-img">
+</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+    
+    <section id="services" class="content-section services-section">
+        <div class="container">
+            <h2>Huduma Zetu za HOT MOTORS</h2>
+            <p>Chagua huduma unayohitaji kuanza mchakato:</p>
+            
+            <div class="service-options">
+                <a href="#rental-form" class="service-button rental-btn">
+                    <h3>1. KUKODISHA MAGARI</h3>
+                    <p>Anza mchakato wa kuweka akiba na kukodi gari.</p>
+                </a>
+                
+                <a href="#purchase-form" class="service-button purchase-btn">
+                    <h3>2. KUNUNUA MAGARI</h3>
+                    <p>Angalia orodha yetu na uwasiliane na muuzaji.</p>
+                </a>
+                
+                <a href="#loan-form" class="service-button loan-btn">
+                    <h3>3. KUOMBA MKOPO</h3>
+                    <p>Jaza fomu ya maombi ya mkopo wa gari.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="rental-form" class="content-section form-section">
+        <div class="container">
+            <h2>Fomu ya Kuweka Akiba (Kukodisha)</h2>
+            <p>Jaza fomu hii fupi ili tuanze mchakato wa kukodi gari unalolipenda.</p>
+            
+            <form class="simple-form">
+                <label for="rental_name">Jina Kamili:</label>
+                <input type="text" id="rental_name" name="rental_name" required><br>
+                
+                <label for="rental_phone">Namba ya Simu:</label>
+                <input type="tel" id="rental_phone" name="rental_phone" required>
+
+                <label for="rental_dates">Tarehe za Kukodisha:</label>
+                <input type="text" id="rental_dates" name="rental_dates" placeholder="Mfano: 10/10/2025 hadi 15/10/2025" required>
+                
+                <label for="rental_type">Aina ya Gari Unalohitaji:</label>
+                <select id="rental_type" name="rental_type">
+                    <option value="sedan">Sedan (Kama Vios/Corolla)</option>
+                    <option value="suv">SUV (Kama RAV4/Prado)</option>
+                    <option value="4x4">4x4 (Safari/Off-road)</option>
+                </select>
+                
+                <button type="submit">Weka Akiba Sasa</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="purchase-form" class="content-section form-section">
+        <div class="container">
+            <h2>Fomu ya Ombi la Kununua Gari</h2>
+            <p>Tafadhali acha taarifa zako na aina ya gari unayotafuta. Muuzaji wetu atawasiliana nawe.</p>
+            
+            <form class="simple-form">
+                <label for="purchase_name">Jina Kamili:</label>
+                <input type="text" id="purchase_name" name="purchase_name" required>
+                
+                <label for="purchase_email">Barua Pepe:</label>
+                <input type="email" id="purchase_email" name="purchase_email" required>
+
+                <label for="car_model">Aina/Model ya Gari Unalotaka:</label>
+                <input type="text" id="car_model" name="car_model" placeholder="Mfano: Toyota Raum au Nissan X-Trail">
+                
+                <label for="purchase_message">Ujumbe/Maelezo ya Ziada:</label>
+                <textarea id="purchase_message" name="purchase_message" rows="4"></textarea>
+                
+                <button type="submit">Tuma Ombi</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="loan-form" class="content-section form-section">
+        <div class="container">
+            <h2>Fomu ya Maombi ya Mkopo wa Gari</h2>
+            <p>Jaza fomu hii kupata tathmini ya haraka ya mkopo wako. Taarifa zako ni salama.</p>
+            
+            <form class="simple-form">
+                <label for="loan_name">Jina Kamili:</label>
+                <input type="text" id="loan_name" name="loan_name" required>
+                
+                <label for="loan_amount">Kiasi cha Mkopo Unachohitaji (Tsh):</label>
+                <input type="number" id="loan_amount" name="loan_amount" required>
+
+                <label for="loan_duration">Muda wa Mkopo (Miezi):</label>
+                <select id="loan_duration" name="loan_duration">
+                    <option value="12">Miezi 12</option>
+                    <option value="24">Miezi 24</option>
+                    <option value="36">Miezi 36</option>
+                </select>
+                
+                <button type="submit">Omba Mkopo</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

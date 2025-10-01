@@ -1,0 +1,443 @@
+/*
+ * =======================================================================
+ * STYLE.CSS - MUUNDO WA TOVUTI YA HOT MOTORS
+ * =======================================================================
+ */
+
+/* Muundo wa Msingi (Global Styles) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Rangi ya background ya jumla */
+    color: #343a40;
+}
+
+/* Kifungashio cha Maudhui (Container) */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px; /* Nafasi kidogo pande zote */
+    text-align: left;
+}
+
+/* Viungo (Links) vya Jumla */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* =======================================================================
+ * 1. NAVIGATION BAR (NAVBAR)
+ * =======================================================================
+ */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff; /* Bluu kuu */
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Inakaa juu ya ukurasa unaposhuka chini */
+    top: 0;
+    z-index: 1000; /* Inahakikisha Nav Bar inakaa juu ya maudhui yote */
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: #0056b3;
+}
+
+/* =======================================================================
+ * 2. HERO SECTION (PICHA KUBWA) - index.html
+ * =======================================================================
+ */
+
+.hero-section {
+    /* TUMIA JINA LA PICHA YAKO HAPA. MFANO: 'rolls_royce_hero.jpg' */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hhhh.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 600px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.hero-button {
+    background-color: #ffc107; /* Njano/Dhahabu */
+    color: #333; 
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.hero-button:hover {
+    background-color: #e0a800;
+}
+
+/* =======================================================================
+ * 3. AGENTS SECTION (MAWAKALA) - index.html
+ * =======================================================================
+ */
+
+.content-section {
+    padding: 60px 20px;
+    min-height: 300px;
+}
+
+.agent-section {
+    background-color: #ffffff; 
+    border-top: 1px solid #dee2e6;
+}
+
+.agent-section h2 {
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.agent-section p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Muundo wa Meza (Table) */
+.agent-section table {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto; 
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.agent-section th, .agent-section td {
+    border: 1px solid #dee2e6;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.agent-section th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.agent-section tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.agent-section tr:hover {
+    background-color: #e9ecef;
+}
+
+.agent-section caption {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #343a40;
+}
+
+/* =======================================================================
+ * 4. SERVICES SECTION (HUDUMA) - services.html
+ * =======================================================================
+ */
+
+.services-section {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.services-section h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.service-options {
+    display: flex; 
+    justify-content: space-around; 
+    margin-top: 30px;
+    flex-wrap: wrap; 
+}
+
+.service-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 30%; 
+    min-width: 250px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-button:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Rangi za Vifungo Tofauti */
+.rental-btn { background-color: #28a745; /* Kijani */ }
+.purchase-btn { background-color: #ffc107; /* Manjano/Dhahabu */ color: #333; }
+.loan-btn { background-color: #dc3545; /* Nyekundu */ }
+
+.service-button h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+.purchase-btn h3, .purchase-btn p {
+    color: #333; 
+}
+
+/* =======================================================================
+ * 5. FORM SECTIONS (FOMU) - services.html
+ * =======================================================================
+ */
+
+.form-section {
+    background-color: #ffffff; 
+    border-top: 1px solid #dee2e6;
+    scroll-margin-top: 80px; 
+}
+
+.form-section h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+.form-section p {
+    text-align: center;
+}
+
+.simple-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.simple-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.simple-form input[type="text"],
+.simple-form input[type="tel"],
+.simple-form input[type="email"],
+.simple-form input[type="number"],
+.simple-form select,
+.simple-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.simple-form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.simple-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* =======================================================================
+ * 6. HELP/FAQ SECTION - help.html
+ * =======================================================================
+ */
+
+.help-section {
+    background-color: #ffffff;
+}
+
+.help-section h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+.help-section ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    padding-left: 0;
+}
+
+.help-section li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* =======================================================================
+ * 7. RESPONSIVE DESIGN (Kwa Simu)
+ * =======================================================================
+ */
+
+@media (max-width: 768px) {
+    /* Navbar */
+    .nav-links {
+        display: none; /* Unaweza kuweka menu ya simu hapa */
+    }
+
+    /* Hero */
+    .hero-section {
+        height: 400px;
+    }
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    /* Service Buttons */
+    .service-options {
+        flex-direction: column; /* Huweka vifungo mstari mmoja chini ya mwingine */
+        align-items: center;
+    }
+    .service-button {
+        width: 80%; /* Hupanua vifungo kwenye simu */
+        min-width: 80%;
+    }
+
+    /* Meza ya Mawakala (Inawekwa mstari mmoja mmoja) */
+    .agent-section table,
+    .agent-section tbody,
+    .agent-section thead,
+    .agent-section th,
+    .agent-section td,
+    .agent-section tr {
+        display: block; 
+    }
+    .agent-section thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .agent-section tr { border: 1px solid #dee2e6; margin-bottom: 10px; }
+    .agent-section td {
+        border: none;
+        border-bottom: 1px solid #dee2e6;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+    .agent-section td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        color: #007bff;
+    }
+    /* Huweka Majina ya safu (column headers) kwenye simu */
+    .agent-section td:nth-of-type(1):before { content: "Mkoa:"; }
+    .agent-section td:nth-of-type(2):before { content: "Jina la Wakala:"; }
+    .agent-section td:nth-of-type(3):before { content: "Mahali:"; }
+}/* Kuficha maandishi ya zamani ya "HOT MOTORS" (hii inazuia matatizo kama hujaifuta kwenye HTML) */
+.logo {
+    /* Huondoa muundo wa maandishi wa zamani */
+    text-decoration: none; 
+}
+
+/* Muundo kwa picha ya Logo */
+.logo-img {
+    height: 40px; /* Urefu unaofaa kwa Logo kwenye Nav Bar */
+    width: auto; /* Huhakikisha Logo haivurugiki */
+    vertical-align: middle; /* Huweka picha katikati ya Nav Bar */
+}
+
+/* Kurekebisha padding ya navbar ikiwa picha yako ni kubwa sana */
+.navbar {
+    /* Huongeza padding ya juu na chini kidogo */
+    padding: 10px 20px; 
+}/* Muundo kwa picha ya Logo */
+.logo-img {
+    height: 40px; /* Urefu unaofaa kwa Logo kwenye Nav Bar */
+    width: auto; /* Huhakikisha Logo haivurugiki */
+    vertical-align: middle; 
+
+    /* SHUTUMA MPYA: Hii itasaidia kuondoa background nyeupe */
+    background-color: transparent; 
+    /* SHUTUMA MPYA: Huondoa mpaka wowote usiotakiwa */
+    border: none; 
+}.logo-img {
+    height: 40px; 
+    width: auto; 
+    vertical-align: middle; 
+    background-color: transparent; /* Muhimu kwa background safi */
+    border: none;
+}
