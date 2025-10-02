@@ -440,4 +440,134 @@ a:hover {
     vertical-align: middle; 
     background-color: transparent; /* Muhimu kwa background safi */
     border: none;
+
+}/* =======================================================================
+ * MUUNDO WA UKURASA WA MAGARI (COLLECTION)
+ * =======================================================================
+ */
+
+.collection-section {
+    padding-top: 20px;
+}
+
+.car-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.car-item h3 {
+    color: #007bff; /* Rangi ya Bluu ya Kichwa */
+    margin-top: 0;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.car-image {
+    max-width: 100%; /* Huzuia picha kuwa kubwa kuliko skrini */
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+.car-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #28a745; /* Rangi ya Kijani kwa Bei */
+    margin-top: 10px;
+}
+
+.car-details {
+    margin-top: 15px;
+    line-height: 1.6;
+}/* =======================================================================
+ * MUUNDO WA UKURASA WA MAGARI (COLLECTION)
+ * =======================================================================
+ */
+
+.collection-section {
+    padding-top: 20px;
+}
+
+.car-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.car-item h3 {
+    color: #007bff; /* Rangi ya Bluu ya Kichwa */
+    margin-top: 0;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.car-image {
+    max-width: 100%; /* Huzuia picha kuwa kubwa kuliko skrini */
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+.car-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #28a745; /* Rangi ya Kijani kwa Bei */
+    margin-top: 10px;
+}
+
+.car-details {
+    margin-top: 15px;
+    line-height: 1.6;
+}/* =======================================================================
+ * MUUNDO WA UKURASA WA MAGARI (COLLECTION)
+ * =======================================================================
+ */
+
+.collection-section {
+    padding-top: 20px;
+}
+
+.car-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.car-item h3 {
+    color: #007bff; /* Rangi ya Bluu ya Kichwa */
+    margin-top: 0;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.car-image {
+    max-width: 100%; /* Huzuia picha kuwa kubwa kuliko skrini */
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+.car-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #28a745; /* Rangi ya Kijani kwa Bei */
+    margin-top: 10px;
+}
+
+.car-details {
+    margin-top: 15px;
+    line-height: 1.6;
 }
