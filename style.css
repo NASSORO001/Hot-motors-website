@@ -837,7 +837,21 @@ a:hover {
     gap: 25px;     
     justify-content: center; /* Hili ndilo la kuviweka kando kwa kando katikati */
     flex-wrap: wrap; 
+}/* =======================================================================
+ * KUWEKA KICHWA CHA HABARI (H1) KATIKATI KWA NGUVU
+ * =======================================================================
+ */
+.hero-content h1 {
+    /* Kuweka kichwa cha habari katikati */
+    text-align: center !important; 
+    /* Huondoa tatizo la kurudi pembeni endapo CSS nyingine itazuia */
+    margin: 0 auto 15px auto; 
+    
+    /* Ongeza ukubwa kidogo kwa msisitizo */
+    font-size: 2.8em; 
+    line-height: 1.2;
 }
+
 
 
 
