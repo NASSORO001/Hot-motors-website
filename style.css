@@ -788,6 +788,28 @@ a:hover {
     padding-top: 15px;
     margin-top: 15px;
 }
+/* Kwenye style.css, tafuta .hero-content na urekebishe hivi */
+.hero-content {
+    /* Rudisha upana wa zamani au ongeza zaidi ili kuruhusu vifungo viwili */
+    max-width: 800px; /* Badilisha kutoka 600px kurudi 800px */
+    padding: 20px;
+    margin: 50px auto; /* 'auto' huweka content katikati wima */
+    text-align: center; /* Hili huweka maandishi yote katikati */
+}
+/* Kwenye style.css, tafuta .cta-buttons na urekebishe hivi */
+.cta-buttons {
+    margin-top: 35px;
+    display: flex; 
+    gap: 25px;     
+    justify-content: center; /* MUHIMU: Huviweka vifungo katikati kabisa */
+    flex-wrap: wrap; 
+}
+/* ... kisha hapa chini, FUTA au TOA alama ya comment kwenye code hii niliyokupa hapo awali, 
+   ili ibakie 'center' tu, na si 'left' au 'flex-start' */
+/* .hero-content h1,
+.hero-content p {
+    text-align: left; 
+} */
 
 
 
