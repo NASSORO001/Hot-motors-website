@@ -810,6 +810,34 @@ a:hover {
 .hero-content p {
     text-align: left; 
 } */
+/* =======================================================================
+ * MAREKEBISHO YA MWISHO YA HERO SECTION NA CTA BUTTONS
+ * HII INAHAKIKISHA VIFUNGO VINAKAA KATIKATI, KANDO KWA KANDO
+ * =======================================================================
+ */
+
+/* 1. Kufanya Maudhui ya Hero Yakae Katikati na Kuwa Mapana Zaidi */
+.hero-content {
+    max-width: 800px; /* Upana wa kutosha kwa vifungo viwili kukaa kando kando */
+    padding: 20px;
+    margin: 50px auto; /* 'auto' huweka block katikati wima */
+    text-align: center; 
+}
+
+/* 2. Kufanya Maandishi Yote ya Ndani Yakae Katikati */
+.hero-content h1,
+.hero-content p {
+    text-align: center; 
+}
+
+/* 3. Kufanya Vifungo Vikae Kando kwa Kando na Katikati */
+.cta-buttons {
+    margin-top: 35px;
+    display: flex; 
+    gap: 25px;     
+    justify-content: center; /* Hili ndilo la kuviweka kando kwa kando katikati */
+    flex-wrap: wrap; 
+}
 
 
 
