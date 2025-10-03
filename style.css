@@ -865,6 +865,15 @@ a:hover {
 .social-links a:hover {
     color: #28a745; /* Rangi ya kijani ikiguswa */
 }
+/* =======================================================================
+ * MABORESHO YA MWISHO YA NAVIGATION BAR (Kivuli Kinene)
+ * =======================================================================
+ */
+.navbar {
+    /* Box shadow mpya na yenye nguvu */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25) !important; 
+    /* !important huilazimisha kutumika, hata kama kuna sheria nyingine kali hapo juu */
+}
 
 
 
