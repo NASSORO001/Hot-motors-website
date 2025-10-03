@@ -898,6 +898,95 @@ a:hover {
     background-size: cover;
     /* ... code zingine ... */
 }
+/* =======================================================================
+ * CAR COLLECTION GRID (Muundo wa Orodha ya Magari)
+ * =======================================================================
+ */
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #6c757d;
+    font-size: 1.1em;
+}
+
+.car-grid {
+    display: grid;
+    /* Muundo wa Grid: Kadi mbili kwenye mstari mmoja kwenye kompyuta (au moja kwenye simu) */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.car-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-5px); /* Kadi huinuka inapoguswa */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.car-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; 
+}
+
+.car-info {
+    padding: 20px;
+}
+
+.car-info h3 {
+    font-size: 1.5em;
+    color: #007bff; /* Bluu ya HOT MOTORS */
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #28a745; /* Rangi ya kijani kwa bei */
+    margin-bottom: 15px;
+}
+
+.specs {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.specs li {
+    margin-bottom: 8px;
+    color: #495057;
+    font-size: 0.95em;
+}
+
+.specs li i {
+    margin-right: 8px;
+    color: #6c757d;
+}
+
+.car-cta {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: #ffc107; /* Rangi ya njano ya CTA */
+    color: #343a40;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.car-cta:hover {
+    background-color: #e0a800;
+}
 
 
 
