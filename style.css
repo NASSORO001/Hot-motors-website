@@ -987,6 +987,24 @@ a:hover {
 .car-cta:hover {
     background-color: #e0a800;
 }
+/* =======================================================================
+ * KATI KICHWA CHA MAGARI KUTOKA collection.html
+ * =======================================================================
+ */
+
+/* Hii itahamisha kichwa kikuu (h2) cha magari katikati */
+.collection-section h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Ongeza nafasi kidogo chini ya kichwa */
+    font-size: 2.5em; /* Kifanye kiwe kikubwa kidogo */
+    color: #333; /* Rangi nyeusi zaidi kwa uwazi */
+}
+
+/* Kichwa Kidogo (Subtitle) tayari kilikuwa katikati, lakini tunaweza kukiboresha */
+.collection-section .subtitle {
+    text-align: center;
+    margin-bottom: 40px; 
+}
 
 
 
