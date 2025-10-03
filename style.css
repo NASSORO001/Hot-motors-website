@@ -891,6 +891,13 @@ a:hover {
     margin-right: 10px; /* Nafasi kidogo kati ya ikoni na maandishi */
     font-size: 1.1em;
 }
+/* Kwenye style.css, tafuta .hero-section na urekebishe mstari huu wa background-image */
+.hero-section {
+    /* KUONGEZA UKUNGU (OVERLAY) KUTOKA 0.6 HADI 0.7 AU 0.8 */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('hhhh.jpg'); 
+    background-size: cover;
+    /* ... code zingine ... */
+}
 
 
 
