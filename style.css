@@ -571,3 +571,60 @@ a:hover {
     margin-top: 15px;
     line-height: 1.6;
 }
+/* =======================================================================
+ * CALL TO ACTION (CTA) BUTTONS - index.html
+ * =======================================================================
+ */
+
+.cta-buttons {
+    margin-top: 30px;
+    display: flex; /* Huviweka vifungo kando kando */
+    gap: 20px;     /* Huweka nafasi kati ya vifungo */
+    justify-content: center; /* Huviweka katikati ya skrini */
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px); /* Huinua kitufe kidogo kinaposhikwa na mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Rangi ya Kitufe cha Kwanza (Primary: Angalia Magari Yetu) */
+.primary-btn {
+    background-color: #28a745; /* Kijani */
+    color: white;
+    border: 2px solid #28a745;
+}
+
+.primary-btn:hover {
+    background-color: #1c7430;
+}
+
+/* Rangi ya Kitufe cha Pili (Secondary: Anza Kununua/Kukodisha) */
+.secondary-btn {
+    background-color: white;
+    color: #007bff; /* Bluu */
+    border: 2px solid #007bff;
+}
+
+.secondary-btn:hover {
+    background-color: #f0f8ff;
+    color: #0056b3;
+}
+
+/* Muundo wa Hero (Huenda unahitaji kurekebisha nafasi) */
+.hero-section {
+    padding-bottom: 50px; /* Huongeza nafasi chini ya vifungo */
+}
+
