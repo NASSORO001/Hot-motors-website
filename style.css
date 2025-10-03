@@ -883,6 +883,14 @@ a:hover {
     /* Weka kivuli kigumu zaidi (Nyeusi 35% opacity) */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35); 
 }
+/* =======================================================================
+ * ICON STYLING KWA SERVICES BUTTONS
+ * =======================================================================
+ */
+.service-button h3 i {
+    margin-right: 10px; /* Nafasi kidogo kati ya ikoni na maandishi */
+    font-size: 1.1em;
+}
 
 
 
