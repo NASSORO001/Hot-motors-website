@@ -874,6 +874,15 @@ a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25) !important; 
     /* !important huilazimisha kutumika, hata kama kuna sheria nyingine kali hapo juu */
 }
+/* =======================================================================
+ * MABORESHO YA MWISHO YA NAVIGATION BAR (Kivuli Kinene)
+ * Hii inabatilisha sheria ya Nav Bar iliyokuwa dhaifu hapo juu.
+ * =======================================================================
+ */
+.navbar {
+    /* Weka kivuli kigumu zaidi (Nyeusi 35% opacity) */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35); 
+}
 
 
 
