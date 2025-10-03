@@ -851,44 +851,7 @@ a:hover {
     font-size: 2.8em; 
     line-height: 1.2;
 }
-/* =======================================================================
- * WHATSAPP FLOAT BUTTON (Kitufe Kinachoelea)
- * =======================================================================
- */
 
-.whatsapp-float {
-    position: fixed; /* Huifanya isiguseke na scrolling */
-    width: 60px;
-    height: 60px;
-    bottom: 40px; /* Nafasi kutoka chini */
-    right: 40px; /* Nafasi kutoka kulia */
-    background-color: #25d366; /* Rangi ya Kijani ya WhatsApp */
-    color: #FFF;
-    border-radius: 50px; /* Hufanya kitufe kuwa duara kabisa */
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 1000; /* Huifanya ikae juu ya vitu vingine vyote */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.whatsapp-float:hover {
-    background-color: #128c7e;
-    transform: scale(1.05);
-}
-
-/* Kurekebisha kwa simu ndogo */
-@media (max-width: 600px) {
-    .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
-        font-size: 25px;
-    }
-}
 
 
 
