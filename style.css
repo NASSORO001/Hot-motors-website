@@ -851,6 +851,20 @@ a:hover {
     font-size: 2.8em; 
     line-height: 1.2;
 }
+/* Kwenye style.css, tafuta sehemu ya FOOTER (MKANDA WA CHINI) na uhakikishe code hizi zipo */
+
+/* Mitandao ya Kijamii - SOCIAL LINKS */
+.social-links a {
+    display: inline-block;
+    color: #f8f9fa; /* Hii ndio rangi ya Ikoni, rangi nyeupe au gray-light */
+    font-size: 1.5em;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #28a745; /* Rangi ya kijani ikiguswa */
+}
 
 
 
