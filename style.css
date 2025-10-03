@@ -627,4 +627,73 @@ a:hover {
 .hero-section {
     padding-bottom: 50px; /* Huongeza nafasi chini ya vifungo */
 }
+/* Kwenye style.css, tafuta na rekebisha hivi */
+.hero-section {
+    /* ... code zingine hapa ... */
+    padding-bottom: 80px; /* Hii huongeza nafasi chini ya vifungo */
+}
+
+.hero-content {
+    /* ... code zingine hapa ... */
+    max-width: 800px; /* Punguza upana wa maudhui */
+    padding: 30px; 
+    margin-top: 50px; /* Huweka content katikati wima (vertically) */
+}/* =======================================================================
+ * CALL TO ACTION (CTA) BUTTONS - index.html (IMEBORESHWA)
+ * =======================================================================
+ */
+
+.cta-buttons {
+    margin-top: 35px;
+    display: flex; 
+    gap: 25px;     /* Ongeza nafasi kati ya vifungo */
+    justify-content: center;
+    flex-wrap: wrap; /* Ruhusu vifungo kuhamia mstari mwingine kwenye simu */
+}
+
+.cta-btn {
+    display: flex; /* Huviweka vifungo na ikoni kwenye mstari mmoja */
+    align-items: center; /* Huweka ikoni na maandishi katikati */
+    padding: 18px 35px; /* Ongeza padding kwa ukubwa zaidi */
+    font-size: 1.25em;  /* Fanya maandishi yawe makubwa zaidi */
+    border-radius: 50px; /* Viwe duara zaidi (Pill shape) */
+    transition: background-color 0.3s ease, transform 0.1s;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3); /* Kivuli kinene zaidi */
+}
+
+.cta-btn i {
+    margin-right: 10px; /* Nafasi kati ya ikoni na maandishi */
+    font-size: 1.1em;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px); /* Huinua kitufe zaidi kinaposhikwa na mouse */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3); 
+}
+
+/* Rangi ya Kwanza: ANGALIA MAGARI YETU */
+.primary-btn {
+    background-color: #ffc107; /* **Njano-Dhahabu** */
+    color: #333; /* Maandishi meusi */
+    border: 3px solid #ffc107; 
+}
+
+.primary-btn:hover {
+    background-color: #e0a800; 
+    color: white; /* Maandishi kuwa meupe ikiguswa */
+}
+
+/* Rangi ya Pili: ANZA KUNUNUA/KUKODISHA */
+.secondary-btn {
+    background-color: transparent; 
+    color: white;                 
+    border: 3px solid white;      
+}
+
+.secondary-btn:hover {
+    background-color: #007bff; 
+    color: white;
+    border: 3px solid #007bff;
+}
+
 
