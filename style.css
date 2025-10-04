@@ -1506,6 +1506,112 @@ footer {
 .footer-column h3 {
     color: white !important; 
 }
+/* =======================================================================
+ * MEDIA QUERIES (KWA AJILI YA SIMU NA TABLET NDOGO)
+ * =======================================================================
+ */
+
+@media (max-width: 768px) {
+    
+    /* 1. NAV BAR (Sogeza Viungo kwa Juu/Chini) */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 5px;
+        position: relative; /* Hakikisha inakaa vizuri */
+        height: auto;
+    }
+
+    .nav-links {
+        /* Fanya links zionekane mstari mmoja mstari mwingine */
+        flex-direction: column; 
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        /* Weka mstari chini ya kila link kwa muonekano mzuri */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+        padding-bottom: 5px;
+    }
+    
+    .nav-links li:last-child {
+        border-bottom: none; 
+    }
+    
+    /* 2. HERO SECTION (Picha Kuu ya Rolls-Royce) */
+    #hero-home {
+        /* Ondoa urefu kamili ili kuacha nafasi ya kutosha kwa maudhui */
+        height: auto; 
+        min-height: 500px; /* Hakikisha inabaki kubwa kidogo */
+        padding: 100px 20px 50px; /* Punguza padding */
+    }
+
+    .hero-content {
+        /* Ondoa nafasi ngumu ya 'absolute' ili kuruhusu maudhui kutulia vizuri */
+        position: static; 
+        transform: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-title {
+        font-size: 2.5em; /* Punguza ukubwa wa kichwa */
+    }
+
+    .hero-buttons {
+        flex-direction: column; /* Panga vifungo juu chini */
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .hero-buttons .btn {
+        width: 90%; /* Vifungo vichukue upana mwingi */
+        margin: 0 auto;
+    }
+
+    /* 3. MAWAKALA JEDWALI */
+    .branches-section {
+        padding: 30px 10px;
+    }
+
+    .branches-table {
+        /* Jedwali inaweza kuwa pana sana, fanya ionekane vizuri kwenye simu */
+        display: block;
+        width: 100%;
+        overflow-x: auto; /* Ruhusu kuscroll pembeni kama ni pana sana */
+        white-space: nowrap; /* Hakikisha haivunji maneno */
+    }
+
+    .branches-table thead, .branches-table tbody, .branches-table tr {
+        display: block;
+    }
+
+    /* 4. FOOTER (Panga Nguzo Juu/Chini) */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .footer-column {
+        min-width: 100%;
+        /* Ondoa mstari wa blue chini ya kichwa cha footer kwenye simu */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 20px;
+    }
+    
+    .footer-column:last-child {
+        border-bottom: none;
+    }
+    
+    /* Hakikisha links za footer zimekaa vizuri */
+    .footer-column ul {
+        padding: 0;
+    }
+}
 
 
 
