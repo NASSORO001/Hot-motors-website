@@ -1705,6 +1705,64 @@ footer {
         text-align: center;
     }
 }
+/* Hakikisha hizi sheria zipo nje ya media query */
+.navbar {
+    position: fixed; /* Baki juu kabisa */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000; /* Ongeza z-index ya juu zaidi! */
+    background-color: #343a40; 
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Sheria zote za flexbox zibaki hapa kwa PC/Laptop */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Hakikisha hizi sheria zipo nje ya media query kwa ajili ya Laptop */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    /* MUHIMU: Hakikisha inakaa mstari mmoja kwenye Laptop */
+    flex-direction: row; 
+}
+@media (max-width: 768px) {
+    
+    /* NAV BAR FIXES (Kutokukata) */
+    .navbar {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px 15px;
+    }
+    .nav-links {
+        flex-direction: column; 
+        text-align: center; 
+    }
+    
+    /* HERO SECTION FIX (Kutokufunikwa) */
+    #hero-home {
+        margin-top: 120px !important; 
+        padding-top: 30px !important;
+    }
+    
+    /* FOOTER FIXES (Inapangilia safu kwa simu) */
+    .footer-container {
+        flex-direction: column; /* Panga juu/chini kwenye simu */
+        text-align: center;
+    }
+
+    .footer-column {
+        min-width: 100%;
+        margin-bottom: 20px; 
+    }
+    
+    /* ... sheria zingine za simu (kama branches-table) zibaki hapa ... */
+}
 
 
 
