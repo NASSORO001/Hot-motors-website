@@ -1005,6 +1005,58 @@ a:hover {
     text-align: center;
     margin-bottom: 40px; 
 }
+/* =======================================================================
+ * WHY US SECTION (KWA NINI UTUCHAGUE)
+ * =======================================================================
+ */
+.why-us-section {
+    background-color: #f4f4f9; /* Rangi laini ya nyuma */
+    padding: 80px 20px;
+}
+
+.why-us-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.2em;
+    color: #343a40;
+}
+
+.features-grid {
+    display: grid;
+    /* Inapanga katika safu 3 kwenye kompyuta (auto-fit hurekebisha simu) */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px; /* Nafasi kati ya vipengele */
+}
+
+.feature-item {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Inainuka kidogo inapoguswa */
+}
+
+.feature-item i {
+    font-size: 3em; /* Kufanya Icon (Picha ndogo) kuwa kubwa */
+    color: #007bff; /* Rangi ya Bluu ya Hot Motors */
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.feature-item p {
+    color: #6c757d;
+    line-height: 1.6;
+}
 
 
 
