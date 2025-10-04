@@ -1121,7 +1121,67 @@ html, body {
 .why-us-section {
     margin-top: 0 !important; /* Ondoa margin yoyote hasi iliyowekwa awali */
 }
+/* =======================================================================
+ * MAREKEBISHO YA GRIDI YA 'KWA NINI UTUCHAGUE' (2-1 LAYOUT)
+ * =======================================================================
+ */
 
+/* Lenga Gridi Kuu ya 'Why Us' */
+.features-grid {
+    display: grid;
+    /* Kwenye kompyuta, anza kwa safu 3 (2-1) */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    max-width: 900px; /* Punguza upana ili kuruhusu uwekaji katikati */
+    margin: 0 auto; /* Weka Gridi yote katikati */
+}
+
+/* Weka kipengele cha tatu (Magari Bora) katikati ya Gridi */
+.feature-item:nth-child(3) {
+    /* Kifanye kiwe kipengele kipana kinachochukua nafasi za safu mbili */
+    grid-column: 1 / span 3;
+    
+    /* Weka kadi yenyewe katikati ya upana uliopo */
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Kurekebisha muundo wa simu (Kila kitu kikae juu chini) */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr; /* Rudisha safu moja kwa simu */
+    }
+    .feature-item:nth-child(3) {
+        grid-column: 1; /* Rudisha kwenye safu ya kwanza */
+        max-width: 100%; /* Tumia upana wote */
+    }
+}
+/* =======================================================================
+ * MAREKEBISHO YA MIFUMO YA VIFUNGO VYA HERO SECTION (KUNUNUA/KUKOPA)
+ * =======================================================================
+ */
+
+.hero-buttons {
+    display: flex; /* Tumia Flexbox kuviweka mstari mmoja */
+    justify-content: center; /* Viweke katikati ya sehemu ya Hero */
+    gap: 20px; /* Nafasi kati ya vifungo */
+    margin-top: 30px; 
+    flex-wrap: wrap; /* Rudisha kwenye safu moja moja kwenye simu */
+}
+
+.hero-buttons .btn {
+    /* Hakikisha vifungo havina upana mkubwa sana */
+    min-width: 220px;
+    text-align: center;
+}
+
+/* Marekebisho ya simu (vifungo moja baada ya kingine) */
+@media (max-width: 600px) {
+    .hero-buttons {
+        flex-direction: column; /* Jipange juu chini */
+        align-items: center;
+    }
+}
 
 
 
