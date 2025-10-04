@@ -1072,6 +1072,55 @@ a:hover {
     color: #6c757d;
     line-height: 1.6;
 }
+/* =======================================================================
+ * MAREKEBISHO YA KUDUMU YA SCROLLING NA OVERLAP (HARAKA)
+ * =======================================================================
+ */
+
+/* 1. Kufanya vipengele vyote kuheshimu upana, kurekebisha kupishana */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. Kuruhusu ukurasa kuscroll juu/chini na kuondoa marufuku ya kuscroll */
+html, body {
+    /* Rudisha scrolling ya kawaida */
+    overflow-y: scroll !important;
+    overflow-x: hidden !important; 
+    /* Hakikisha urefu wa mwili wa ukurasa unaruhusu maudhui yote */
+    height: auto !important; 
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Kurekebisha Hero Section (Rolls-Royce Image) kupandiana */
+/* Inalazimisha Hero Section kukaa vizuri na kuruhusu maudhui mengine kuonekana chini yake */
+#hero-home {
+    /* Ondoa urefu uliofungwa na kuruhusu maudhui ya chini kuonekana */
+    height: auto !important; 
+    padding-bottom: 80px; /* Nafasi ya chini ya Hero */
+    position: relative; 
+    z-index: 1; /* Hii ni muhimu, kuhakikisha inakaa juu ya picha ya nyuma */
+}
+
+/* 4. Kurekebisha Nav Bar isifunike maudhui */
+.navbar {
+    position: fixed; /* Baki hivi kwanza */
+    width: 100%;
+    z-index: 1000; /* Kaa juu kabisa */
+}
+
+/* 5. Kuongeza nafasi kwa maudhui ya kwanza baada ya Nav Bar */
+/* Hii inahakikisha maudhui yoyote yanayoanza chini ya Nav Bar hayafunikwi */
+.content-section {
+    padding-top: 100px; /* Ongeza nafasi ya kutosha juu ya Nav Bar */
+}
+
+/* Kadi za why-us (Ambazo zilionekana kupandiana) */
+.why-us-section {
+    margin-top: 0 !important; /* Ondoa margin yoyote hasi iliyowekwa awali */
+}
 
 
 
