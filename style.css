@@ -1612,6 +1612,49 @@ footer {
         padding: 0;
     }
 }
+/* =======================================================================
+ * MAREKEBISHO YA JEDWALI LA MAWAKALA KWENYE SIMU
+ * Hii inapaswa kuwekwa ndani ya @media (max-width: 768px) { ... }
+ * =======================================================================
+ */
+
+@media (max-width: 768px) {
+    /* ... sheria zingine za simu ziko hapa ... */
+
+    /* 3. MAWAKALA JEDWALI */
+    .branches-table {
+        /* Weka upana kamili wa kontena */
+        width: 100%; 
+        /* MUHIMU: Inahakikisha jedwali linabaki ndani ya mipaka na kuwezesha kuscroll */
+        display: block; 
+        overflow-x: auto; 
+        white-space: nowrap; /* Inazuia kukatika vibaya */
+        box-sizing: border-box; 
+    }
+    
+    /* Rudisha muundo wa kawaida wa table ndani ya scroll-container */
+    .branches-table table {
+        width: 100%;
+        min-width: 500px; /* Weka upana wa chini ili kuruhusu kuscroll */
+        border-collapse: collapse;
+    }
+    
+    /* Fanya Seli za Jedwali zikae kama kawaida ndani ya table */
+    .branches-table th, .branches-table td {
+        white-space: normal; /* Ruhusu maandishi kuvunjika ndani ya seli */
+    }
+
+    /* Ondoa sheria za display: block; kwa vipengele vya table zilizotangulia */
+    .branches-table thead, .branches-table tbody, .branches-table tr {
+        display: table-row-group;
+    }
+    .branches-table thead {
+        display: table-header-group;
+    }
+    .branches-table tr {
+        display: table-row;
+    }
+}
 
 
 
