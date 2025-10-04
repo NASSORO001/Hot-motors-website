@@ -27,14 +27,6 @@
         <p><strong>Sisi ni nani?</strong> Sisi ni kampuni inayoongoza katika kutoa masuluhisho kamili ya magari, tukijumuisha huduma za kukodisha, kuuza, na kukopesha (financing). Dhamira yetu ni kurahisisha upatikanaji wa gari unalohitaji, iwe ni kwa matumizi ya muda mfupi, ununuzi, au mahitaji ya mtaji.</p>
         <p><strong>Wasiliana Nasi:</strong> Barua pepe: info@hotmotorsltd.co.tz | Simu: +255 700 000 000</p>
 
-        <div class="cta-buttons">
-            <a href="collection.html" class="cta-btn primary-btn">
-                <i class="fas fa-car"></i> ANGALIA MAGARI YETU
-            </a>
-            <a href="services.html" class="cta-btn secondary-btn">
-                <i class="fas fa-handshake"></i> ANZA KUNUNUA/KUKODISHA
-            </a>
-        </div>
         <section id="why-us" class="content-section why-us-section">
     <div class="container">
         <h2>KWA NINI UTUCHAGUE?</h2>
@@ -64,6 +56,48 @@
     </div>
 </section>
     </section>
+    /* =======================================================================
+ * MAREKEBISHO YA GRIDI YA 'KWA NINI UTUCHAGUE' (2-1 LAYOUT)
+ * =======================================================================
+ */
+
+.features-grid {
+    display: grid;
+    /* Tengeneza safu 3 kwa ajili ya upana wa jumla */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    max-width: 900px; /* Upana wa jumla wa Gridi */
+    margin: 0 auto; /* Weka Gridi yote katikati */
+}
+
+/* Kifanye kipengele cha 1 na cha 2 kuchukua nafasi za safu 1 na 2 */
+.feature-item:nth-child(1),
+.feature-item:nth-child(2) {
+    /* Hawahitaji marekebisho maalum */
+    grid-column: span 1; 
+}
+
+/* Weka kipengele cha tatu (Magari Bora) katikati ya Gridi */
+.feature-item:nth-child(3) {
+    /* Hiki ndicho muhimu: Kifanye kichukue safu ya 2 na 3, na kuanzia safu ya 1 */
+    grid-column: 1 / span 3; 
+    
+    /* Punguza upana wake ili kiwe kidogo */
+    max-width: 300px; 
+    /* Tumia margin auto ili kishinikizwe katikati ya nafasi hiyo pana */
+    margin: 0 auto; 
+}
+
+/* Kurekebisha muundo wa simu (Kila kitu kikae juu chini) */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr; /* Rudisha safu moja kwa simu */
+    }
+    .feature-item:nth-child(3) {
+        grid-column: 1; /* Rudisha kwenye safu ya kwanza */
+        max-width: 100%; /* Tumia upana wote */
+    }
+}
     
     <section id="agents" class="content-section agent-section">
         <div class="container">
@@ -145,6 +179,7 @@
 </body>
 
 </html>
+
 
 
 
