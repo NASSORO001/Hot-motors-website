@@ -180,6 +180,174 @@ a:hover {
     margin: 30px auto; 
     border-collapse: collapse;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}/* =======================================================================
+ * MAREKEBISHO YA MSINGI (KUZUIA OVERLAP)
+ * =======================================================================
+ */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    overflow-y: scroll !important;
+    overflow-x: hidden !important; 
+    height: auto !important; 
+}
+#hero-home {
+    /* Rudisha urefu kwenye 'auto' na toa nafasi ya kutosha juu/chini */
+    height: 100vh;
+    padding-bottom: 80px; 
+    padding-top: 150px;
+    position: relative; 
+    z-index: 1; 
+}
+.content-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =======================================================================
+ * MAGARI MUHIMU (FEATURED CARS) - SAFU 3 & STYLING
+ * =======================================================================
+ */
+
+.car-grid.featured-grid {
+    display: grid;
+    /* Panga magari 3 katika mstari mmoja kwa skrini kubwa */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+.car-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.car-card:hover {
+    transform: translateY(-5px);
+}
+.car-image {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+.car-info {
+    padding: 15px;
+    text-align: center;
+}
+.car-info h3 {
+    color: #007bff; /* Blue */
+    margin-top: 0;
+}
+.car-info .price {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.car-cta {
+    display: block;
+    background-color: #ffc107; /* Njano */
+    color: #343a40;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.car-cta:hover {
+    background-color: #e0a800;
+}
+
+
+/* =======================================================================
+ * MAWAKALA TABLE (BLUE STYLE & MARGINS)
+ * =======================================================================
+ */
+.branches-section {
+    padding: 50px 20px;
+}
+.branches-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto; 
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: left;
+}
+.branches-table th, .branches-table td {
+    padding: 15px 20px;
+    border: 1px solid #e9ecef;
+}
+.branches-table th {
+    background-color: #007bff; /* Blue */
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.branches-table tr:nth-child(even) {
+    background-color: #f8f9fa; 
+}
+
+
+/* =======================================================================
+ * FOOTER STYLING
+ * =======================================================================
+ */
+footer {
+    background-color: #343a40; 
+    color: white;
+    padding: 40px 20px 10px;
+    font-size: 0.9em;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.footer-column h3 {
+    color: #ffc107; /* Njano */
+    border-bottom: 2px solid #007bff; 
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #495057;
+    padding-top: 15px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+
+/* MEDIA QUERIES (KWA SIMU) */
+@media (max-width: 768px) {
+    .car-grid.featured-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-column h3 {
+        border-bottom: none;
+    }
 }
 
 .agent-section th, .agent-section td {
@@ -1293,6 +1461,7 @@ footer {
     padding-bottom: 20px;
 }
 /* ... na CSS nyingine za Footer Columns zifuate hapa ... */
+
 
 
 
