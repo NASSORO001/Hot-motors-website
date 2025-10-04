@@ -1224,6 +1224,76 @@ html, body {
     max-width: 300px; 
     margin: 0 auto; 
 }
+/* =======================================================================
+ * MAREKEBISHO YA 'KWA NINI UTUCHAGUE?' (MSTARI MMOJA/3-COLUMN)
+ * =======================================================================
+ */
+
+.features-grid {
+    display: grid;
+    /* SAFU 3 ZINAZOFANANA KWENYE MSTARI MMOJA */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    max-width: 1100px; /* Ongeza upana kidogo */
+    margin: 0 auto; 
+}
+
+/* Rudisha Kipengele cha Tatu kikae kama vingine */
+.feature-item:nth-child(3) {
+    grid-column: span 1; /* Kipengele kimoja tu */
+    max-width: none; 
+    margin: 0; 
+}
+
+/* Kurekebisha simu (Rudisha juu chini) */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr; /* Rudisha safu moja kwa simu */
+    }
+}
+/* =======================================================================
+ * MAREKEBISHO YA FEATURED CARS (SAFUI 4)
+ * =======================================================================
+ */
+
+.car-grid.featured-grid {
+    display: grid;
+    /* Panga magari 4 katika mstari mmoja kwa skrini kubwa */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Punguza nafasi ili zitoshe 4 */
+    margin-top: 40px;
+}
+
+/* Kurekebisha simu/tablet (Zirudi kwenye safu 2) */
+@media (max-width: 1200px) {
+    .car-grid.featured-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Kurekebisha simu ndogo (Safu 1) */
+@media (max-width: 600px) {
+    .car-grid.featured-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Footer Styling (Iliyokuwa na shida ya Spacing/Muonekano) */
+footer {
+    background-color: #343a40; 
+    color: white;
+    padding: 40px 20px 10px;
+    font-size: 0.9em;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+/* ... na CSS nyingine za Footer Columns zifuate hapa ... */
+
 
 
 
