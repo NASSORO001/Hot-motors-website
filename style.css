@@ -1497,6 +1497,15 @@ footer {
     /* Unaweza kuongeza margin chini ya kichwa pia */
     margin-bottom: 20px; 
 }
+/* =======================================================================
+ * MAREKEBISHO YA RANGI YA FOOTER (Vichwa Vya Habari Vyeupe)
+ * =======================================================================
+ */
+
+/* Hii inahakikisha vichwa vya habari (h3) vya footer vinakuwa vyeupe */
+.footer-column h3 {
+    color: white !important; 
+}
 
 
 
