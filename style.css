@@ -1797,6 +1797,55 @@ footer {
 
     /* Vitu vingine vya zamani vya simu vikae hapa... */
 }
+/* =======================================================================
+ * FINAL FIX: Kurekebisha Tatizo la Navbar na Hero Section
+ * =======================================================================
+ */
+
+/* 1. SHERIA YA MSINGI YA NAV BAR (Nje ya Media Query) */
+.navbar {
+    position: fixed; /* Baki juu */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000 !important; /* Inalazimisha ikae juu ya kila kitu */
+    /* Hakikisha height haijafungwa kwenye sheria zingine, au iwe auto */
+    height: auto; 
+}
+
+/* 2. MAREKEBISHO KWA SIMU (@media) */
+@media (max-width: 768px) {
+    
+    /* A. BODY FIX: Inalipa Nafasi Juu ya Ukurasa (Home Page) */
+    /* Hii ndio njia bora ya kusuluhisha mgogoro wa Navbar vs Hero */
+    body {
+        /* Nafasi ya kutosha kwa Navbar ya simu kujikunja */
+        padding-top: 120px !important; 
+    }
+    
+    /* B. NAV BAR FIX (Kutokukata) */
+    .navbar {
+        flex-direction: column !important; /* Panga links juu chini */
+        align-items: center !important; 
+        padding: 10px 15px !important;
+    }
+    
+    /* C. HERO SECTION FIX: Ondoa sheria zote za margin/padding za juu kwenye Hero Section */
+    #hero-home {
+        /* Ondoa sheria yoyote ya margin-top iliyopita kwenye Home Page Hero */
+        margin-top: 0 !important; 
+        padding-top: 30px !important; 
+        height: auto !important; 
+    }
+
+    /* D. FOOTER FIX na JEDWALI FIX (Kama tulivyokubaliana) */
+    .footer-container {
+        flex-direction: column !important; 
+    }
+    .branches-table {
+        overflow-x: auto !important; 
+    }
+}
 
 
 
