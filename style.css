@@ -1763,6 +1763,40 @@ footer {
     
     /* ... sheria zingine za simu (kama branches-table) zibaki hapa ... */
 }
+/* =======================================================================
+ * MAREKEBISHO YA MWISHO YA VIUNGO VYA FOOTER NA NAV BAR
+ * =======================================================================
+ */
+@media (max-width: 768px) {
+    
+    /* FIX YA NAV BAR (Hakikisha inakaa juu na viungo vipo) */
+    .navbar {
+        flex-direction: column !important; 
+        align-items: center !important; 
+        padding: 10px 15px !important;
+        height: auto !important;
+    }
+    .nav-links {
+        flex-direction: column !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    /* FIX YA FOOTER VIUNGO (VIUNGO HARAKA) */
+    .footer-column ul {
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    
+    .footer-column ul li {
+        margin: 5px 0 !important;
+        display: block !important; /* Hakikisha kila kiungo kinakaa kwenye mstari wake */
+    }
+
+    /* Vitu vingine vya zamani vya simu vikae hapa... */
+}
 
 
 
