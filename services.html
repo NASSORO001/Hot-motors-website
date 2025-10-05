@@ -218,45 +218,48 @@
     }
 }
 /* =======================================================================
- * MAREKEBISHO YA MWISHO YA HOME PAGE KWA SIMU (Responsive Fixes)
+ * MAREKEBISHO YA MWISHO KABISA YA HOME PAGE KWA SIMU
+ * Hii inalenga tatizo la Navbar kufunika maudhui (Hero Section)
  * =======================================================================
  */
 
+/* SHERIA YA MSINGI: Inalipa nafasi juu ya body kwa ajili ya Navbar */
+/* Nje ya Media Query, hakikisha hii ipo: */
+body {
+    padding-top: 60px; /* Nafasi ya kutosha kwa Navbar kwenye PC */
+}
+
 @media (max-width: 768px) {
-    /* 1. NAV BAR FIX (Kutokukata, Kuonekana Juu) */
+    
+    /* 1. BODY FIX (Hii inatoa nafasi chini ya Navbar iliyojikunja kwenye simu) */
+    body {
+        /* Ongeza padding-top zaidi ili kutoa nafasi ya kutosha kwa Navbar kwenye simu */
+        padding-top: 120px !important; 
+    }
+
+    /* 2. NAV BAR FIX (Inalazimisha kuonekana juu) */
     .navbar {
-        /* Inalazimisha Navbar ikae juu kabisa na isiathiriwe na picha/maudhui */
         position: fixed !important; 
         z-index: 10000 !important; 
         width: 100% !important;
-        
-        /* Inapanga viungo juu chini kwa simu */
         flex-direction: column !important; 
-        align-items: center !important; 
         height: auto !important;
         padding: 10px 15px !important;
     }
     
-    .nav-links {
-        flex-direction: column !important;
-        width: 100% !important;
-        text-align: center !important;
-    }
-    
-    /* 2. HERO SECTION FIX (Inasuluhisha Navbar kufunika maudhui) */
+    /* 3. HERO SECTION FIX (Ondoa margin-top kwenye Hero, kwani body sasa inalipa nafasi) */
     #hero-home {
-        /* Hii ndiyo sheria kuu. Inasukuma Hero Section chini ya Navbar iliyojikunja */
-        margin-top: 120px !important; 
+        margin-top: 0 !important; /* Ondoa margin-top uliyoweka awali */
         height: auto !important; 
         padding-top: 30px !important;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
-    /* 3. FOOTER FIX (Kuzuia Nguzo Kupandiana/Kuvurugika) */
+    /* 4. FOOTER FIX (Kuzuia Nguzo Kupandiana) */
     .footer-container {
-        /* Inapanga nguzo juu chini kwa simu */
         flex-direction: column !important; 
         text-align: center !important;
-        padding: 0 10px !important;
     }
 
     .footer-column {
@@ -265,23 +268,14 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important; 
         padding-bottom: 15px !important;
     }
-    .footer-column:last-child {
-        border-bottom: none !important; 
-    }
     
-    /* 4. JEDWALI LA MAWAKALA FIX (Kuruhusu Kuscroll pembeni) */
+    /* 5. JEDWALI LA MAWAKALA FIX (Kuruhusu Kuscroll pembeni) */
     .branches-table {
-        display: block !important;
-        width: 100% !important;
         overflow-x: auto !important; 
-        white-space: nowrap !important; 
-    }
-    
-    /* Inahakikisha jedwali lina upana wa chini wa kutosha kusomwa vizuri */
-    .branches-table table {
-        min-width: 500px !important;
+        display: block !important;
     }
 }
+
 
 
 
